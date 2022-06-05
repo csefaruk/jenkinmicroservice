@@ -11,7 +11,7 @@ services:
       - net_api
       - int_net_api
     ports:
-      - 9002:10841
+      - 9002:9002
 
   s_contact_api:
     container_name: contact_api
