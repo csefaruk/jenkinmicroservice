@@ -2,6 +2,7 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
+EXPOSE 7001
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
@@ -16,8 +17,6 @@ RUN dotnet build "Reservation.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "Reservation.API.csproj" -c Release -o /app/publish
-
-EXPOSE 7001
 
 FROM base AS final
 WORKDIR /app
