@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://192.168.101.102:9002"
+    "BaseUrl": "http://localhost:9002"
   },
   "Routes": [
     {

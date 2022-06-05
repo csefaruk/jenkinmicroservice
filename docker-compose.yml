@@ -22,7 +22,7 @@ services:
     networks:
       - int_net_api
     ports:
-      - 9003:7000
+      - 9003:9003
 
   s_res_api:
     container_name: res_api
@@ -33,7 +33,7 @@ services:
     networks:
       - int_net_api
     ports:
-      - 9004:7001
+      - 9004:9004
 
 
 networks:

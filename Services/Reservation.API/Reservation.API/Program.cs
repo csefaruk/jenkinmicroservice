@@ -20,7 +20,7 @@ namespace Reseravtion.API
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://*:7001");
+                    webBuilder.UseUrls("http://*:9004");
                     webBuilder.UseStartup<Startup>();
                 });
     }
