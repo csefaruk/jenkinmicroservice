@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://c_apigateway"
+    "BaseUrl": "http://localhost:80"
   },
   "Routes": [
     {
