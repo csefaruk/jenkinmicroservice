@@ -14,6 +14,8 @@ RUN dotnet build "APIGateway.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "APIGateway.csproj" -c Release -o /app/publish
 
+EXPOSE 10841
+
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
