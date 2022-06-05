@@ -11,7 +11,7 @@ services:
       - net_api
       - int_net_api
     ports:
-      - 10841:10841
+      - 10841:80
 
   s_contact_api:
     container_name: c_contact_api
@@ -22,7 +22,7 @@ services:
     networks:
       - int_net_api
     ports:
-      - 7000:7000
+      - 7000:80
 
   s_res_api:
     container_name: c_res_api
@@ -33,7 +33,7 @@ services:
     networks:
       - int_net_api
     ports:
-      - 7001:7001
+      - 7001:80
 
 
 networks:
