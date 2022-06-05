@@ -28,6 +28,7 @@ namespace Contact.API.Controllers
         [HttpGet("{id}")]
         public Models.ContactModels.Contact GetContactById(Guid Id)
         {
+
             return contactService.GetContactById(Id);
         }
     }
