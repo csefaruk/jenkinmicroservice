@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://192.168.101.102:10841"
+    "BaseUrl": "http://192.168.101.102:9002"
   },
   "Routes": [
     {
@@ -12,7 +12,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7000
+          "Port": 9003
         }
       ]
     },
@@ -25,7 +25,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7000
+          "Port": 9003
         }
       ]
     },
@@ -38,7 +38,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7001
+          "Port": 9004
         }
       ]
     },
@@ -51,7 +51,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7001
+          "Port": 9004
         }
       ]
     }
