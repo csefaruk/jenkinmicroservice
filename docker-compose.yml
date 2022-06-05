@@ -2,8 +2,8 @@ version: '3.4'
 
 services:
   s_apigateway:
-    container_name: c_apigateway
-    image: salihcantekin/apigateway
+    container_name: apigateway
+    image: apigateway_image
     build:
       context: .
       dockerfile: APIGateway/Dockerfile
@@ -14,8 +14,8 @@ services:
       - 9002:10841
 
   s_contact_api:
-    container_name: c_contact_api
-    image: salihcantekin/contactapi
+    container_name: contact_api
+    image: contactapi_image
     build:
       context: .
       dockerfile: Services/Contact.API/Contact.API/Dockerfile
@@ -25,8 +25,8 @@ services:
       - 9003:7000
 
   s_res_api:
-    container_name: c_res_api
-    image: salihcantekin/resapi
+    container_name: res_api
+    image: resapi_image
     build:
       context: .
       dockerfile: Services/Reservation.API/Reservation.API/Dockerfile
