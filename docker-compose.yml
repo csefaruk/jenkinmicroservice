@@ -37,9 +37,8 @@ services:
 
 
 networks:
-  net_api:
-    driver: bridge
-
   int_net_api:
     driver: overlay
     internal: true
+  net_api:
+    driver: bridge
