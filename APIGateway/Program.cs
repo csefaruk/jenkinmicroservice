@@ -30,7 +30,7 @@ namespace APIGateway
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     
-                    webBuilder.UseUrls("http://*:1000");
+                    webBuilder.UseUrls("http://*:9002");
                     webBuilder.UseStartup<Startup>();
                 });
     }
