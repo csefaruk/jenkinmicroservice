@@ -9,7 +9,6 @@ services:
       dockerfile: APIGateway/Dockerfile
     networks:
       - net_api
-      - int_net_api
     ports:
       - 9002:9002
 
@@ -20,7 +19,7 @@ services:
       context: .
       dockerfile: Services/Contact.API/Contact.API/Dockerfile
     networks:
-      - int_net_api
+      - net_api
     ports:
       - 9003:9003
 
@@ -31,14 +30,10 @@ services:
       context: .
       dockerfile: Services/Reservation.API/Reservation.API/Dockerfile
     networks:
-      - int_net_api
+      - net_api
     ports:
       - 9004:9004
 
 networks:
   net_api:
     driver: bridge
-
-  int_net_api:
-    driver: overlay
-    internal: true
