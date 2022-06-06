@@ -2,7 +2,7 @@
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:9002"
   },
-  "ReRoutes": [
+  "Routes": [
     {
       "UpstreamPathTemplate": "/contact/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
