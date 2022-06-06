@@ -46,6 +46,7 @@
       "UpstreamPathTemplate": "/res",
       "UpstreamHttpMethod": [ "Get", "Post" ],
 
+
       "DownstreamPathTemplate": "/api/reservation",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
