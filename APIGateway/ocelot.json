@@ -2,8 +2,11 @@
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:9002"
   },
-  "ReRoutes": [
+  "Routes": [
     {
+      "UpstreamPathTemplate": "/contact/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+
       "DownstreamPathTemplate": "/api/contact/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -11,10 +14,12 @@
           "Host": "localhost",
           "Port": "9003"
         }
-      ],
-      "UpstreamPathTemplate": "/contact/{everything}"
+      ]
     },
     {
+      "UpstreamPathTemplate": "/contact",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+
       "DownstreamPathTemplate": "/api/contact",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -22,10 +27,12 @@
           "Host": "localhost",
           "Port": "9003"
         }
-      ],
-      "UpstreamPathTemplate": "/contact"
+      ]
     },
     {
+      "UpstreamPathTemplate": "/res/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+
       "DownstreamPathTemplate": "/api/reservation/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -33,10 +40,12 @@
           "Host": "localhost",
           "Port": "9004"
         }
-      ],
-      "UpstreamPathTemplate": "/res/{everything}"
+      ]
     },
     {
+      "UpstreamPathTemplate": "/res",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+
       "DownstreamPathTemplate": "/api/reservation",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -44,8 +53,7 @@
           "Host": "localhost",
           "Port": "9004"
         }
-      ],
-      "UpstreamPathTemplate": "/res"
+      ]
     }
   ]
 }
