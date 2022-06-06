@@ -4,8 +4,6 @@
   },
   "ReRoutes": [
     {
-      "UpstreamPathTemplate": "/contact/{everything}",
-    
       "DownstreamPathTemplate": "/api/contact/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -13,11 +11,10 @@
           "Host": "localhost",
           "Port": "9003"
         }
-      ]
+      ],
+      "UpstreamPathTemplate": "/contact/{everything}"
     },
     {
-      "UpstreamPathTemplate": "/contact",     
-
       "DownstreamPathTemplate": "/api/contact",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -25,11 +22,10 @@
           "Host": "localhost",
           "Port": "9003"
         }
-      ]
+      ],
+      "UpstreamPathTemplate": "/contact"
     },
     {
-      "UpstreamPathTemplate": "/res/{everything}",
-      
       "DownstreamPathTemplate": "/api/reservation/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -37,11 +33,10 @@
           "Host": "localhost",
           "Port": "9004"
         }
-      ]
+      ],
+      "UpstreamPathTemplate": "/res/{everything}"
     },
     {
-      "UpstreamPathTemplate": "/res",     
-
       "DownstreamPathTemplate": "/api/reservation",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -49,7 +44,8 @@
           "Host": "localhost",
           "Port": "9004"
         }
-      ]
+      ],
+      "UpstreamPathTemplate": "/res"
     }
   ]
 }
