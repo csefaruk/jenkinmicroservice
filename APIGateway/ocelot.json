@@ -5,8 +5,7 @@
   "ReRoutes": [
     {
       "UpstreamPathTemplate": "/contact/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-
+    
       "DownstreamPathTemplate": "/api/contact/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -17,8 +16,7 @@
       ]
     },
     {
-      "UpstreamPathTemplate": "/contact",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamPathTemplate": "/contact",     
 
       "DownstreamPathTemplate": "/api/contact",
       "DownstreamScheme": "http",
@@ -31,8 +29,7 @@
     },
     {
       "UpstreamPathTemplate": "/res/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-
+      
       "DownstreamPathTemplate": "/api/reservation/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -43,8 +40,7 @@
       ]
     },
     {
-      "UpstreamPathTemplate": "/res",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamPathTemplate": "/res",     
 
       "DownstreamPathTemplate": "/api/reservation",
       "DownstreamScheme": "http",
