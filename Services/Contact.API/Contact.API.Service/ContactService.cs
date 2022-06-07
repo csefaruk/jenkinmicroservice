@@ -12,8 +12,8 @@ namespace Contact.API.Service
             return new Models.ContactModels.Contact()
             {
                 Id = Guid.NewGuid(),
-                FirstName = "Faruk-420",
-                LastName = "Cantekin"
+                FirstName = "Mohammed",
+                LastName = "Faruk"
             };
         }
 
@@ -22,8 +22,8 @@ namespace Contact.API.Service
             return new Models.ContactModels.Contact()
             {
                 Id = Id,
-                FirstName = "Salih",
-                LastName = "Cantekin"
+                FirstName = "Mohammed",
+                LastName = "Faruk"
             };
         }
     }
