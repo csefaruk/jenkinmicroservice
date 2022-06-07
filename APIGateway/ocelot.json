@@ -11,7 +11,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "contact_api",
           "Port": "9003"
         }
       ]
@@ -24,7 +24,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "contact_api",
           "Port": "9003"
         }
       ]
@@ -37,7 +37,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "res_api",
           "Port": "9004"
         }
       ]
@@ -51,7 +51,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "res_api",
           "Port": "9004"
         }
       ]
