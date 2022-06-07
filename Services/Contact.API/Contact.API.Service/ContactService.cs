@@ -12,7 +12,7 @@ namespace Contact.API.Service
             return new Models.ContactModels.Contact()
             {
                 Id = Guid.NewGuid(),
-                FirstName = "Salih",
+                FirstName = "Faruk-420",
                 LastName = "Cantekin"
             };
         }
