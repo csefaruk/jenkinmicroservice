@@ -39,5 +39,6 @@ networks:
   int_net_api:
     driver: overlay
     internal: true
+    attachable: true
   net_api:
     driver: bridge
